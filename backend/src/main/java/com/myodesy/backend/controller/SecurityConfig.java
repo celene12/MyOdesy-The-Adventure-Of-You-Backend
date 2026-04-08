@@ -24,8 +24,8 @@ public class SecurityConfig {
             )
             .httpBasic(httpBasic -> httpBasic.disable())   
             .formLogin(form -> form.disable());           
-    return http.build();
-}
+        return http.build();
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
