@@ -1,7 +1,5 @@
 package com.myodesy.backend.controller;
 
-import com.myodesy.backend.dto.UpdateUserRequest;
-import com.myodesy.backend.model.SystemUser;
 import com.myodesy.backend.service.DeleteUserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

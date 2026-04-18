@@ -1,4 +1,4 @@
-package com.myodesy.backend.config;
+package com.myodesy.backend.controller;
 
 import org.springframework.context.annotation.*;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
