@@ -3,6 +3,8 @@ package com.myodesy.backend.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "usuario_sistema")
 public class SystemUser {
@@ -19,6 +21,7 @@ public class SystemUser {
     private String username;
 
     @Column(name = "contrasena", nullable = false)
+    @JsonIgnore
     private String password;
 
     @Column(name = "fecha_registro")
