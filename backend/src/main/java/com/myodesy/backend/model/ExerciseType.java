@@ -34,11 +34,10 @@ public class ExerciseType {
     public ExerciseType(String name, String description, Integer minRepetitions, Integer maxRepetitions, Integer series) {
         this.name = name;
         this.description = description;
-        this.repMin = repMin;
-        this.repMax = repMax;
+        this.repMin = minRepetitions;
+        this.repMax = maxRepetitions;
         this.series = series;
     }
-
 
     public Long getExerciseId() { return exerciseId; }
 

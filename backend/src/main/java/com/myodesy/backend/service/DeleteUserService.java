@@ -1,6 +1,5 @@
 package com.myodesy.backend.service;
 
-import com.myodesy.backend.dto.UpdateUserRequest;
 import com.myodesy.backend.model.SystemUser;
 import com.myodesy.backend.model.Person;
 import com.myodesy.backend.repository.UserRepository;
