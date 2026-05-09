@@ -19,9 +19,14 @@ public class SecurityConfig {
             .sessionManagement(session -> session
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/myodesy/**").permitAll()
-                .anyRequest().authenticated()
-            )
+                .requestMatchers(
+                    "/v3/api-docs/**",
+                    "/swagger-ui/**",
+                    "/swagger-ui.html"
+                ).permitAll()
+    .requestMatchers("/api/**").permitAll()
+    .anyRequest().authenticated()
+)
             .httpBasic(httpBasic -> httpBasic.disable())   
             .formLogin(form -> form.disable());           
         return http.build();
